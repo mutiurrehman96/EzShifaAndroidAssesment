@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/horizontalScrollView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivHomeImg0"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:contentDescription="@string/post_image"
+                android:scaleType="fitXY"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageView15P"
+                app:srcCompat="@drawable/nature" />
+
+            <TextView
+                style="@style/homeFrontImagesStyle"
+                android:text="@string/hello_world_this_is_sample_text_for_illustration"
+                app:layout_constraintBottom_toBottomOf="@+id/ivHomeImg0"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeImg0"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeImg0" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivHomeImg1"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:contentDescription="@string/post_image"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageView15P"
+                app:srcCompat="@drawable/nature" />
+
+            <TextView
+                style="@style/homeFrontImagesStyle"
+                android:text="@string/hello_world_this_is_sample_text_for_illustration"
+                app:layout_constraintBottom_toBottomOf="@+id/ivHomeImg1"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeImg1"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeImg1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivHomeImg2"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:contentDescription="@string/post_image"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageView15P"
+                app:srcCompat="@drawable/nature" />
+
+            <TextView
+                style="@style/homeFrontImagesStyle"
+                android:text="@string/hello_world_this_is_sample_text_for_illustration"
+                app:layout_constraintBottom_toBottomOf="@+id/ivHomeImg2"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeImg2"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeImg2" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8dp">
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/ivHomeImg3"
+                android:layout_width="300dp"
+                android:layout_height="180dp"
+                android:contentDescription="@string/post_image"
+                android:scaleType="fitXY"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:shapeAppearanceOverlay="@style/roundedImageView15P"
+                app:srcCompat="@drawable/nature" />
+
+            <TextView
+                style="@style/homeFrontImagesStyle"
+                android:text="@string/hello_world_this_is_sample_text_for_illustration"
+                app:layout_constraintBottom_toBottomOf="@+id/ivHomeImg3"
+                app:layout_constraintEnd_toEndOf="@+id/ivHomeImg3"
+                app:layout_constraintStart_toStartOf="@+id/ivHomeImg3" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</HorizontalScrollView>

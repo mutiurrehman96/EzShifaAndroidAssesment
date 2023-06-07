@@ -1,0 +1,41 @@
+package com.zamulk.ezshifaassesmentmuti
+
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.app.Application
+import android.content.pm.ActivityInfo
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatDelegate
+
+class EZShifaApp: Application() {
+    override fun onCreate() {
+        super.onCreate()
+        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_NO);
+
+        registerActivityLifecycleCallbacks(object:ActivityLifecycleCallbacks{
+            @SuppressLint("SourceLockedOrientationActivity")
+            override fun onActivityCreated(p0: Activity, p1: Bundle?) {
+               p0.requestedOrientation= ActivityInfo.SCREEN_ORIENTATION_PORTRAIT
+            }
+
+            override fun onActivityStarted(p0: Activity) {
+            }
+
+            override fun onActivityResumed(p0: Activity) {
+            }
+
+            override fun onActivityPaused(p0: Activity) {
+            }
+
+            override fun onActivityStopped(p0: Activity) {
+            }
+
+            override fun onActivitySaveInstanceState(p0: Activity, p1: Bundle) {
+            }
+
+            override fun onActivityDestroyed(p0: Activity) {
+            }
+
+        })
+    }
+}

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/hsvPaymentHistory"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_8dp"
+    android:layout_marginBottom="@dimen/_8dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_12dp"
+            android:layout_marginStart="@dimen/_4dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPayHistory1"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/_8dp"
+                    android:contentDescription="@string/post_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/payment_history" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4dp"
+                    android:text="@string/payment_history"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivPayHistory1"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivPayHistory1"
+                    app:layout_constraintTop_toTopOf="@+id/ivPayHistory1" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/_12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPayHistory2"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/_8dp"
+                    android:contentDescription="@string/post_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/payment_history_two" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4dp"
+                    android:text="@string/payment_history"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivPayHistory2"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivPayHistory2"
+                    app:layout_constraintTop_toTopOf="@+id/ivPayHistory2" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_4dp"
+            app:cardCornerRadius="@dimen/_12dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="true">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_4dp">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivPayHistory3"
+                    android:layout_width="100dp"
+                    android:layout_height="60dp"
+                    android:layout_margin="@dimen/_8dp"
+                    android:contentDescription="@string/post_image"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:shapeAppearanceOverlay="@style/roundedImageView"
+                    app:srcCompat="@drawable/payment_history_two" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_4dp"
+                    android:text="@string/payment_history"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/ivPayHistory3"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/ivPayHistory3"
+                    app:layout_constraintTop_toTopOf="@+id/ivPayHistory3" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</HorizontalScrollView>
